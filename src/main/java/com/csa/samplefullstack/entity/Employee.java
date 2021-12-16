@@ -1,12 +1,20 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package com.csa.samplefullstack.entity;
 
 import javax.persistence.*;
-
+/**
+ *
+ * @author liaa
+ */
 @Entity
 @Table(name="tbl_employee")
 public class Employee {
-
-    @Id
+    
+     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long employeeId;
     private String name;
@@ -21,7 +29,7 @@ public class Employee {
     }
 
     public Employee(){
-
+        
     }
 
     public Long getEmployeeId() {
@@ -56,4 +64,3 @@ public class Employee {
         this.location = location;
     }
 }
-
